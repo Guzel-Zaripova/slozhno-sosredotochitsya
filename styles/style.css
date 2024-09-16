@@ -142,9 +142,6 @@
   background-color: var(--accent-background);
 }
 
-/* main - основной контент */
-/* 1 секция */
-
 .main__section-one {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -209,8 +206,6 @@
   outline: 1px solid var(--main-text-color);
 }
 
-/* 2 секция */
-
 .main__section-two {
   margin: 0px 20px 80px 20px;
 }
@@ -222,8 +217,6 @@
 .section__cards-two {
   grid-template-columns: repeat(3, 1fr);
 }
-
-/* 3 секция */
 
 .main__section-three {
   display: grid;
@@ -245,8 +238,6 @@
   color: var(--main-color);
   background-color: var(--accent-background);
 }
-
-/* 4 секция */
 
 .main__section-gallery {
   margin: 0px 20px 60px 20px;
@@ -295,8 +286,6 @@
   grid-row: 3/4;
 }
 
-/* footer */
-
 .footer {
   display: flex;
   justify-content: center;
@@ -304,8 +293,6 @@
   position: relative;
   height: max(668px, 100vh);
 }
-
-/* адаптив планшет*/
 
 @media (max-width: 768px) {
   .header__theme-menu {
@@ -335,8 +322,6 @@
     block-size: 780px;
   }
 }
-
-/* адаптив мобилка*/
 
 @media (max-width: 376px) {
   .decorated-zone::before {
