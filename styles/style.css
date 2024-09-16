@@ -2,8 +2,8 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-attachment: fixed;
   background-image: var(--background-image);
+  background-color: var(--background-color);
   background-position: bottom;
   object-fit: cover;
   background-attachment: fixed;
@@ -71,11 +71,11 @@
 
 .header__theme-menu-button:hover {
   cursor: pointer;
-  outline: 1px solid var(--decoration-color);
+  outline: 1px solid var(--outline-color);
 }
 
 .header__theme-menu-button:focus {
-  outline: none;
+  outline: transparent;
 }
 
 .header__theme-menu-button:focus-visible {
@@ -195,6 +195,18 @@
 .link {
   text-decoration: none;
   text-shadow: 3px 3px 0 var(--link-shadow);
+}
+
+.link:hover {
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.link:focus {
+  outline: transparent;
+}
+
+.link:focus-visible {
+  outline: 1px solid var(--main-text-color);
 }
 
 /* 2 секция */
