@@ -131,8 +131,8 @@
 .header__paragraph {
   align-self: center;
   margin-inline-end: 20px;
+  margin-block-end: 20px;
   inline-size: 491px;
-  block-size: 71px;
   font-family: var(--font-family), sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -140,7 +140,6 @@
   line-height: 130%;
   color: var(--accent-text);
   background-color: var(--accent-background);
-  margin-block-end: 20px;
 }
 
 /* main - основной контент */
@@ -250,7 +249,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
-  height: 1048px;
+  block-size: 1048px;
 }
 
 .gallery_item {
@@ -292,6 +291,112 @@
   align-items: center;
   position: relative;
   height: max(668px, 100vh);
-  /* background-image: var(--background-image);
-  background-attachment: fixed; */
+}
+
+/* адаптив планшет*/
+
+@media (max-width: 768px) {
+  .header__theme-menu {
+    justify-self: end;
+    align-self: center;
+    margin-inline-end: 20px;
+  }
+
+  .header__paragraph {
+    inline-size: 364px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: column;
+  }
+
+  .section__title {
+    inline-size: 236px;
+  }
+
+  .section__cards-two {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .gallery {
+    block-size: 780px;
+  }
+}
+
+/* адаптив мобилка*/
+
+@media (max-width: 376px) {
+  .decorated-zone::before {
+    top: 10px;
+    right: 10px;
+  }
+
+  .decorated-zone::after {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .header__theme-menu {
+    margin-block-start: 10px;
+    margin-inline-end: 10px;
+  }
+
+  .header__decoration {
+    top: 10px;
+    right: 19px;
+  }
+
+  .header__title {
+    margin-inline-start: 10px;
+  }
+
+  .title {
+    font-size: var(--font-size-small);
+  }
+
+  .header__paragraph {
+    justify-self: center;
+    margin-inline-end: 0px;
+    margin-block-end: 10px;
+    inline-size: 355px;
+  }
+
+  .main__section-one {
+    grid-template-columns: 1fr;
+    margin: 40px 10px 50px 10px;
+  }
+
+  .section__title {
+    inline-size: 355px;
+  }
+
+  .main__section-two {
+    margin: 0px 10px 50px 10px;
+  }
+
+  .section__cards-two {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .main__section-three {
+    grid-template-columns: 1fr;
+    margin: 0px 10px 50px 10px;
+  }
+
+  .main__section-gallery {
+    margin: 0px 10px 40px 10px;
+  }
+
+  .item_title-gallery {
+    margin-block-end: 10px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    block-size: 1366px;
+  }
 }
