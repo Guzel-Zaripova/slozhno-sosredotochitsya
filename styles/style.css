@@ -228,8 +228,8 @@
   gap: 20px;
 }
 
-.section__cards {
-  margin-block-start: 20px;
+.advice__item_title {
+  margin-block-end: 20px;
 }
 
 .item_title-small {
